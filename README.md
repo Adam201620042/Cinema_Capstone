@@ -1,5 +1,4 @@
- ## My Repository Can Be Found Here: https://github.com/Adam201620042/CinemaCapstone
- 
+## My Repository Can Be Found Here: https://github.com/Adam201620042/Cinema_Capstone
  ## Introduction
 This is the git repository for your capstone project. You should use this repository throughout your development.
 There are several benefits to this repository.
