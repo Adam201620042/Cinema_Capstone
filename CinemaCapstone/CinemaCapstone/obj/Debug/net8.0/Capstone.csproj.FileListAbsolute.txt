@@ -1,0 +1,15 @@
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\bin\Debug\net8.0\Capstone.exe
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\bin\Debug\net8.0\Capstone.deps.json
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\bin\Debug\net8.0\Capstone.runtimeconfig.json
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\bin\Debug\net8.0\Capstone.dll
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\bin\Debug\net8.0\Capstone.pdb
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\obj\Debug\net8.0\Capstone.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\obj\Debug\net8.0\Capstone.AssemblyInfoInputs.cache
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\obj\Debug\net8.0\Capstone.AssemblyInfo.cs
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\obj\Debug\net8.0\Capstone.csproj.CoreCompileInputs.cache
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\obj\Debug\net8.0\Capstone.sourcelink.json
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\obj\Debug\net8.0\Capstone.dll
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\obj\Debug\net8.0\refint\Capstone.dll
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\obj\Debug\net8.0\Capstone.pdb
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\obj\Debug\net8.0\Capstone.genruntimeconfig.cache
+C:\Users\901586\Source\Repos\CinemaCapstone\CinemaCapstone\CinemaCapstone\obj\Debug\net8.0\ref\Capstone.dll
