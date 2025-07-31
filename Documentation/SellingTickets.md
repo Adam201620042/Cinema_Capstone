@@ -13,7 +13,8 @@ This workflow should do the following things:
 - Select popcorn and/or soda
 - Calculate the total price of the transaction
 - Demonstrate the number of tickets available has updated
-- Save updated information about screenings
+-Save updated information about screenings
+
 This process ensures that all data is imported and confirmed accurately while guiding the user through the ticket and concession sales process.
 Load Cinema and Screening Data
 After loading the cinema and screening information, any screenings that have already begun are filtered out.
