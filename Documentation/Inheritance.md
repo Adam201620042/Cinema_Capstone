@@ -3,68 +3,43 @@
 Here you should describe how you have used Inheritance for Code Reuse in your solution.
 
 You should use class diagrams and code snippets where appropriate.
-
-Here is an example of a code snippet in markdown
-
+By using inheritance, classes can be created from existing ones, allowing shared methods and properties to be utilised again without requiring code changes. This facilitates maintenance and keeps the code DRY (Don't Repeat Yourself).
+The main use of inheritance in my solution is in the representation of staff roles:
+All staff members have common properties and methods, such as login credentials and personal data, which are stored in my base class Staff.
+Specialised classes like Manager, which inherit these basic traits but can also add new capabilities or override behaviours when necessary, are derived from Staff.
+By using this method, the Program class can handle particular circumstances for Manager objects when necessary, such as giving managers access to additional menu items, while still working with a general Staff reference.
 ```cs
-/// <summary>
-/// Prompts the user to enter an integer within a specified range.
-/// </summary>
-/// <param name="pMin">The minimum acceptable value (inclusive).</param>
-/// <param name="pMax">The maximum acceptable value (inclusive).</param>
-/// <param name="pMessage">The message to display to the user.</param>
-/// <returns>An integer entered by the user within the specified range.</returns>
-/// <exception cref="Exception">Thrown when the minimum value is greater than the maximum value.</exception>
-public static int GetIntegerInRange(int pMin, int pMax, string pMessage)
+Staff staff = StaffLogin.Authenticate(cinema.Staff);
+
+if (staff == null)
 {
-  if (pMin > pMax)
-  {
-    throw new Exception($"Minimum value {pMin} cannot be greater than maximum value {pMax}");
-  }
-
-  int result;
-
-  do
-  {
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.WriteLine(pMessage);
-    Console.WriteLine($"Please enter a number between {pMin} and {pMax} inclusive.");
-
-    Console.ForegroundColor = ConsoleColor.Green;
-    string userInput = Console.ReadLine();
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    try
-    {
-      result = int.Parse(userInput);
-    }
-    catch
-    {
-      Console.WriteLine($"{userInput} is not a number");
-      continue;
-    }
-
-    if (result >= pMin && result <= pMax)
-    {
-      return result;
-    }
-    Console.WriteLine($"{result} is not between {pMin} and {pMax} inclusive.");
-  } while (true);
+    Console.WriteLine("Login failed. Exiting application.");
+    return;
 }
+
+MainMenu.Display(staff is Manager); // Show extra options if user is a Manager
+
+// Further code that checks if staff is Manager to allow access to more features
+if (staff is Manager)
+{
+    StaffManagementWorkflow.Execute(cinema);
+}
++------------------+
+|      Staff       |  <--- Base class with common staff properties and methods
++------------------+
+| - Name           |
+| - StaffId        |
+| + Login()        |
++------------------+
+          ^
+          |
++------------------+
+|    Manager       |  <--- Inherits Staff, adds manager-specific methods
++------------------+
+| + ManageStaff()  |
+| + Login() override|
++------------------+
 ```
 
-Here is an example of a class diagram in markdown
 
-```mermaid
-classDiagram
-  BaseClass <|-- DerivedClass
-  BaseClass *-- ComponentClass
-  class BaseClass{
-    -int privateDataMember
-    -ComponentClass component
-    +publicMethod()
-  }
-  class ComponentClass{
-  }
-  class DerivedClass{
-  }
-```
+
