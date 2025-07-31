@@ -6,7 +6,11 @@ You should use class diagrams and code snippets where appropriate.
 While allowing each object to behave in accordance with its own class, polymorphism enables several object types to be treated uniformly. As a result, the code is easier to extend and more adaptable.
 
 I've mostly utilised inheritance in my project to implement polymorphism, whereby subclasses override base class functions to offer particular behaviour. This eliminates the need to worry about the specifics of each subclass, allowing the remainder of the program to interact with objects using their common base type.
-My base Staff class, for example, is inherited by classes such as Manager. To return role-specific data, each subclass can override methods like GetRole(). The Transaction class and other classes can now use staff objects without having to determine whether they are interacting with a manager or a regular employee.
+My base Staff class, for example, is inherited by classes such as Manager. To return role-specific data, each subclass can override methods like
+```cs
+GetRole().
+```
+The Transaction class and other classes can now use staff objects without having to determine whether they are interacting with a manager or a regular employee.
 ```cs
 // Base Staff class
 public class Staff
