@@ -5,7 +5,7 @@ if (staff is Manager)
 ```
 
 This line checks whether the current staff object is actually a Manager, which only works because Manager is a subclass of Staff. If the user is a manager, the program unlocks additional options, like managing the schedule or overseeing other staff members.
-```mermaid
+```cs
 +-------------+         +----------------+
 |   Staff     |◄────────|    Manager     |
 +-------------+         +----------------+
